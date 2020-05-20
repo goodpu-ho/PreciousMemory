@@ -8,9 +8,9 @@ Instragram clone with EXPress + Prisma + React and React Native.
 - [x] Request Secret
 - [x] Confirm Secret (Login)
 - [x] Like / Unlike a photo
-- [ ] Comment on a photo
-- [ ] Search by user
-- [ ] Search by location
+- [x] Comment on a photo
+- [x] Search by user
+- [x] Search by location
 - [ ] See user profile
 - [ ] Follwer / Unfollwer User
 - [ ] See the full photo
