@@ -15,8 +15,8 @@ Instragram clone with EXPress + Prisma + React and React Native.
 - [x] Unfollwer User
 - [x] Edit my profile
 - [x] See user profile
-- [ ] See My Profile
-- [ ] See the full photo
+- [x] See My Profile
+- [x] See the full photo
 - [ ] Upload Photo
 - [ ] Edit the photo / Remove
 - [ ] See the feed 
