@@ -9,6 +9,7 @@ type User {
   followers: [User!]! 
   following: [User!]! 
   isFollowing: Boolean!
+  selfMe: Boolean!
   posts: [Post!]!
   likes: [Like!]!
   comments: [Comment!]!
