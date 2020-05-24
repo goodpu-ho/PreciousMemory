@@ -20,4 +20,7 @@ Instragram clone with EXPress + Prisma + React and React Native.
 - [ ] Upload Photo
 - [ ] Edit the photo / Remove
 - [ ] See the feed 
+- [ ] See room
+- [ ] Send private Message
+- [ ] Receive Message(RealTime)
 
