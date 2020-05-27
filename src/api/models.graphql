@@ -1,5 +1,6 @@
 type User {
   id: ID! 
+  avatar: String
   username: String! 
   email: String!
   firstName: String 
@@ -23,7 +24,7 @@ type Post {
   files: [File!]!
   location: String
   caption: String!
-  likes: [Like!]!
+  likes: [Like!]! 
   comments: [Comment!]!
   user: User!
   isLiked: Boolean!
