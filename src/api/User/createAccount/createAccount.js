@@ -4,14 +4,30 @@ export default {
     Mutation:{
         createAccount: async (_, args) =>{
             const {username, email, firstName="", lastName="", bio=""} = args;
-            const user = await prisma.createUser({
-                username,
-                email,
-                firstName,
-                lastName,
-                bio
+            const exist = await prisma.$exists.user({
+                OR:[
+                    {
+                        username
+                    },
+                    {email}
+                ]
             });
-            return user;
+            if(exist){
+                throw Error("This username is already taken");
+            }
+            try{
+                await prisma.createUser({
+                    username,
+                    email,
+                    firstName,
+                    lastName,
+                    bio
+                });
+                return true;
+            } catch {
+                return false;
+            }
+            
         }
     }
 }
