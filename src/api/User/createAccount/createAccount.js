@@ -24,7 +24,8 @@ export default {
                     bio
                 });
                 return true;
-            } catch {
+            } catch(e) {
+                console.log(e.messgae);
                 return false;
             }
             
